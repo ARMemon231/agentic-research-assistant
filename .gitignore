@@ -25,6 +25,10 @@ out/
 *.env
 (1).env
 *(1)*
+!*.env.example
+!example.env
+!*.example
+
 
 # OS-specific files
 .DS_Store
