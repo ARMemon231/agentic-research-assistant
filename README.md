@@ -113,7 +113,7 @@ Create a file called `.env` inside `agentic_researcher/backend/`:
 
 ```env
 # Required — MistralAI (for LLM: validation, planning, synthesis)
-MistralAI_API_KEY=sk-proj-...
+MistralAI_API_KEY=Gusd*******************************
 
 # Required for web search — get a free key at https://tavily.com
 TAVILY_API_KEY=tvly-...
@@ -125,7 +125,7 @@ QDRANT_API_KEY=eyJhbGciO...
 QDRANT_COLLECTION=rag_uploads
 
 # Optional — change the model or port if needed
-LLM_MODEL=gpt-4o-mini
+LLM_MODEL=mistral-small-latest
 PORT=8000
 ```
 
