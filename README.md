@@ -1,8 +1,8 @@
-# Lecture 19 — Agentic Researcher
+# — Agentic Researcher
 
 A full-stack agentic AI application: you give it a research topic, and a LangGraph agent validates the topic, breaks it into sub-questions, searches the web (up to 20 URLs), optionally queries a local knowledge base, and writes a structured research report — all while streaming every step to your screen in real time, just like Claude Code shows its thinking.
 
-**What you'll learn (new vs Lecture 18):**
+**What you'll learn:**
 - **LangGraph**: building multi-node agent graphs with conditional routing and state
 - **Topic validation**: using the LLM as a gate before doing expensive work
 - **Server-Sent Events (SSE)**: streaming real-time updates from server to browser
@@ -275,7 +275,7 @@ This prevents wasting API calls on nonsensical input.
 
 ## SSE Streaming — How It Works
 
-> This is one of the key teaching concepts in Lecture 19.
+> This is one of the key teaching concepts.
 
 The browser does not use the native `EventSource` API (which only supports GET requests). Instead, the frontend uses `fetch()` with a `ReadableStream`:
 
