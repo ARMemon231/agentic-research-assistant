@@ -25,7 +25,7 @@ import type { FullReport, HistoryItem, SSEEvent } from './types'
 // Read the backend URL from the Vite environment variable.
 // Set in frontend/.env as VITE_API_BASE=http://localhost:8000
 // The ?? fallback handles the case where the .env file is missing.
-const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_BASE ?? 'https://agentic-research-assistant-production-2682.up.railway.app'
 
 
 // ── Research (SSE streaming) ──────────────────────────────────────────────────
