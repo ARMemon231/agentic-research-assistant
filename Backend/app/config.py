@@ -20,6 +20,12 @@ USAGE:
   print(settings.llm_model)
 """
 from pydantic_settings import BaseSettings
+import os
+import sys
+
+# Debug: Print environment keys to help troubleshoot Railway config
+print("AVAILABLE ENV VARS:", [k for k in os.environ.keys() if "KEY" in k or "SECRET" in k or "URL" in k or "MODEL" in k or "PORT" in k], file=sys.stderr)
+
 
 class Settings(BaseSettings):
     """
