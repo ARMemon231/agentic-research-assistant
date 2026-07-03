@@ -232,8 +232,9 @@ def generate_pdf(topic: str, report_md: str, sources: list) -> bytes:
         # ── H1 heading ───────────────────────────────────────────────────
         if line.startswith("# "):
             # Remove the "# " prefix and convert inline markdown
-            text = _convert_inline(line[2:].strip)
+            text = _convert_inline(line[2:].strip())
             story.append(Paragraph(text, styles["title"]))
+
             # Add a decorative horizontal rule below the title
             story.append(HRFlowable(width="100%", thickness=2, color=colors.HexColor("#1a1a2e")))
             story.append(Spacer(1, 8))
